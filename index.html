@@ -170,6 +170,77 @@ body{
     color:#555;
     font-style:italic;
 }
+    .portfolio{
+margin-top:40px;
+}
+
+.portfolio h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.portfolio-text{
+margin-bottom:30px;
+color:#666;
+}
+
+.portfolio-grid{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.portfolio-card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+transition:.3s;
+
+}
+
+.portfolio-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.portfolio-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+display:block;
+
+}
+
+.portfolio-card h3{
+
+margin:20px 20px 10px;
+
+}
+
+.portfolio-card p{
+
+margin:0 20px 20px;
+
+color:#666;
+
+line-height:1.5;
+
+}
 </style>
 
 </head>
@@ -275,6 +346,55 @@ Everything you need is just one tap away.
 </div>
 
 </div>
+    <section class="portfolio">
+
+<h2>Our Portfolio</h2>
+
+<p class="portfolio-text">
+Quality Prints, Lasting Impressions
+</p>
+
+<div class="portfolio-grid">
+
+<div class="portfolio-card">
+<img src="project1.jpg" alt="Business Cards">
+<h3>Business Cards</h3>
+<p>Premium matte, gloss and spot UV business cards.</p>
+</div>
+
+<div class="portfolio-card">
+<img src="project2.jpg" alt="Flyers">
+<h3>Flyer Printing</h3>
+<p>Beautiful promotional flyers and brochures.</p>
+</div>
+
+<div class="portfolio-card">
+<img src="project3.jpg" alt="Banners">
+<h3>Large Format</h3>
+<p>Banners, roll-up stands and backdrops.</p>
+</div>
+
+<div class="portfolio-card">
+<img src="project4.jpg" alt="Packaging">
+<h3>Packaging</h3>
+<p>Boxes, labels and custom packaging.</p>
+</div>
+
+<div class="portfolio-card">
+<img src="project5.jpg" alt="Apparel">
+<h3>Branded Apparel</h3>
+<p>T-shirts, polos and uniforms.</p>
+</div>
+
+<div class="portfolio-card">
+<img src="project6.jpg" alt="Promo">
+<h3>Promotional Items</h3>
+<p>Mugs, pens, notebooks and more.</p>
+</div>
+
+</div>
+
+</section>
 <div class="footer">
 Powered by <strong>The Print Guy™</strong><br>
 Lagos, Nigeria
