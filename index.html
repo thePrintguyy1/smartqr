@@ -72,6 +72,9 @@ body{
 .call{
     background:#0A8F3D;
 }
+    .quote{
+    background:#ff7a00;
+}
 .whatsapp{
     background:#25D366;
 }
@@ -105,6 +108,39 @@ body{
 .footer strong{
     color:#111;
 }
+    h2{
+    margin:35px 0 20px;
+    color:#222;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.service{
+    background:#f8f8f8;
+    border-radius:18px;
+    padding:20px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.service:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.service i{
+    color:#0b6efd;
+    margin-bottom:12px;
+}
+
+.service p{
+    font-weight:bold;
+    color:#444;
+}
 </style>
 
 </head>
@@ -124,6 +160,9 @@ Everything you need is just one tap away.
 </p>
 <a class="btn call" href="tel:+2347039738987">
 <i class="fas fa-phone"></i> Call Us
+</a>
+    <a class="btn quote" href="#"
+    <i class="fas fa-file-invoice"></i> Get a Free Quote
 </a>
 <a class="btn whatsapp" href="https://wa.me/234XXXXXXXXXX">
 <i class="fab fa-whatsapp"></i> Chat on WhatsApp
@@ -148,7 +187,41 @@ Everything you need is just one tap away.
 <a class="btn review" href="YOUR_GOOGLE_REVIEW_LINK">
 <i class="fas fa-star"></i> Leave a Google Review
 </a>
+<h2>Our Services</h2>
 
+<div class="services">
+
+<div class="service">
+    <i class="fas fa-id-card fa-2x"></i>
+    <p>Business Cards</p>
+</div>
+
+<div class="service">
+    <i class="fas fa-image fa-2x"></i>
+    <p>Flyers</p>
+</div>
+
+<div class="service">
+    <i class="fas fa-box-open fa-2x"></i>
+    <p>Packaging</p>
+</div>
+
+<div class="service">
+    <i class="fas fa-tags fa-2x"></i>
+    <p>Stickers</p>
+</div>
+
+<div class="service">
+    <i class="fas fa-sign fa-2x"></i>
+    <p>Banners</p>
+</div>
+
+<div class="service">
+    <i class="fas fa-shirt fa-2x"></i>
+    <p>Apparel</p>
+</div>
+
+</div>
 <div class="footer">
 Powered by <strong>The Print Guy™</strong><br>
 Lagos, Nigeria
