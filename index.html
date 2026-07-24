@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Print Guy</title>
+
 <style>
-    *{
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -13,7 +14,7 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:linear-gradient(135deg,#eaf4ff,#d6ebff,#c8e3ff);
+    background:linear-gradient(135deg,#eef5ff,#d8ebff,#c7e2ff);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -24,100 +25,128 @@ body{
 .card{
     width:100%;
     max-width:420px;
-    background:rgba(255,255,255,.92);
-    border-radius:30px;
-    padding:35px;
+    background:#ffffff;
+    border-radius:28px;
+    padding:35px 25px;
     text-align:center;
-    box-shadow:0 20px 50px rgba(0,0,0,.18);
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
 }
 
 .logo img{
-    width:380px;
+    width:280px;
     max-width:100%;
+    height:auto;
     margin-bottom:20px;
 }
 
 .tagline{
-    color:#555;
-    font-size:16px;
+    color:#666;
+    font-size:15px;
+    line-height:1.6;
     margin-bottom:30px;
-    line-height:1.5;
 }
 
 .btn{
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
     gap:10px;
     text-decoration:none;
-    color:white;
-    font-weight:bold;
+    color:#fff;
     font-size:17px;
+    font-weight:bold;
     padding:16px;
-    border-radius:50px;
     margin:14px 0;
-    transition:all .3s ease;
+    border-radius:50px;
+    transition:0.3s;
 }
 
 .btn:hover{
-    transform:translateY(-4px);
-    box-shadow:0 12px 25px rgba(0,0,0,.2);
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
 }
 
-.whatsapp{background:#25D366;}
+.whatsapp{
+    background:#25D366;
+}
+
 .instagram{
     background:linear-gradient(45deg,#833AB4,#FD1D1D,#FCAF45);
 }
-.facebook{background:#1877F2;}
-.tiktok{background:#111;}
-.website{background:#555;}
-.review{background:#F4B400;}
+
+.facebook{
+    background:#1877F2;
+}
+
+.tiktok{
+    background:#111;
+}
+
+.website{
+    background:#555;
+}
+
+.review{
+    background:#f4b400;
+}
 
 .footer{
     margin-top:30px;
-    font-size:13px;
     color:#777;
-} </style> 
+    font-size:13px;
+}
+
+.footer strong{
+    color:#111;
+}
+</style>
 
 </head>
 
 <body>
 
+<div class="card">
+
 <div class="logo">
-    <img src="logo.png" alt="The Print Guy Logo">
+<img src="logo.png" alt="The Print Guy Logo">
 </div>
 
 <p class="tagline">
-Premium Printing • Branding • Large Format Printing<br>
+Premium Printing • Branding • Packaging • Large Format Printing
+<br><br>
 Everything you need is just one tap away.
 </p>
 
-<a class="btn whatsapp" href="#">
+<a class="btn whatsapp" href="https://wa.me/234XXXXXXXXXX">
 📱 Chat on WhatsApp
 </a>
 
-<a class="btn instagram" href="#">
+<a class="btn instagram" href="https://instagram.com/YOURUSERNAME">
 📸 Follow on Instagram
 </a>
 
-<a class="btn facebook" href="#">
+<a class="btn facebook" href="https://facebook.com/YOURPAGE">
 👍 Follow on Facebook
 </a>
 
-<a class="btn tiktok" href="#">
+<a class="btn tiktok" href="https://tiktok.com/@YOURUSERNAME">
 🎵 Watch on TikTok
 </a>
 
-<a class="btn website" href="#">
+<a class="btn website" href="https://YOURWEBSITE.COM">
 🌐 Visit Our Website
 </a>
 
-<a class="btn review" href="#">
+<a class="btn review" href="YOUR_GOOGLE_REVIEW_LINK">
 ⭐ Leave a Google Review
 </a>
+
 <div class="footer">
-    Powered by <strong>The Print Guy</strong><br>
-    Lagos, Nigeria
+Powered by <strong>The Print Guy™</strong><br>
+Lagos, Nigeria
 </div>
 
+</div>
+
+</body>
 </html>
