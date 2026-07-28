@@ -111,35 +111,51 @@ body{
     h2{
     margin:35px 0 20px;
     color:#222;
-}
-
 .services{
+    padding:80px 25px;
+    background:#f8fbff;
+    text-align:center;
+}
+
+.services h2{
+    font-size:38px;
+    margin-bottom:45px;
+    color:#111;
+}
+
+.service-grid{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
 }
 
-.service{
-    background:#f8f8f8;
-    border-radius:18px;
-    padding:20px;
-    transition:.3s;
-    cursor:pointer;
+.service-card{
+    background:white;
+    padding:35px 25px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.35s;
 }
 
-.service:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px rgba(0,0,0,.15);
 }
 
-.service i{
-    color:#0b6efd;
+.icon{
+    font-size:50px;
+    margin-bottom:18px;
+}
+
+.service-card h3{
+    font-size:24px;
     margin-bottom:12px;
+    color:#111;
 }
 
-.service p{
-    font-weight:bold;
-    color:#444;
+.service-card p{
+    color:#666;
+    line-height:1.7;
 }
     .gallery{
     display:grid;
@@ -294,50 +310,49 @@ line-height:1.5;
     <!-- Services -->
     <section class="services">
 
-        <h2>Our Services</h2>
+<h2>Our Services</h2>
 
-        <div class="service-grid">
+<div class="service-grid">
 
-            <div class="service-box">
-                🖨️
-                <h3>Business Printing</h3>
-                <p>Business Cards, Letterheads, Flyers</p>
-            </div>
+<div class="service-card">
+<div class="icon">🖨</div>
+<h3>Business Printing</h3>
+<p>Business Cards, Flyers, Brochures, Letterheads and Stationery.</p>
+</div>
 
-            <div class="service-box">
-                🎨
-                <h3>Branding</h3>
-                <p>Logo Design & Brand Identity</p>
-            </div>
+<div class="service-card">
+<div class="icon">🎨</div>
+<h3>Brand Identity</h3>
+<p>Professional Logo Design, Branding and Corporate Identity.</p>
+</div>
 
-            <div class="service-box">
-                🪧
-                <h3>Large Format</h3>
-                <p>Banners, Roll-up Stands & Signage</p>
-            </div>
+<div class="service-card">
+<div class="icon">📢</div>
+<h3>Large Format</h3>
+<p>Banners, Roll-up Stands, Signage and Exhibition Displays.</p>
+</div>
 
-            <div class="service-box">
-                📦
-                <h3>Packaging</h3>
-                <p>Boxes, Labels & Product Packaging</p>
-            </div>
+<div class="service-card">
+<div class="icon">📦</div>
+<h3>Packaging</h3>
+<p>Product Boxes, Labels, Pouches and Custom Packaging.</p>
+</div>
 
-            <div class="service-box">
-                👕
-                <h3>Custom Apparel</h3>
-                <p>T-Shirts, Jerseys & Uniforms</p>
-            </div>
+<div class="service-card">
+<div class="icon">👕</div>
+<h3>Custom Apparel</h3>
+<p>T-Shirts, Jerseys, Hoodies and Corporate Uniforms.</p>
+</div>
 
-            <div class="service-box">
-                🎁
-                <h3>Promotional Gifts</h3>
-                <p>Mugs, Pens, Notebooks & More</p>
-            </div>
+<div class="service-card">
+<div class="icon">🎁</div>
+<h3>Promotional Gifts</h3>
+<p>Mugs, Pens, Notebooks, USB Drives and Corporate Gifts.</p>
+</div>
 
-        </div>
+</div>
 
-    </section>
-
+</section>
     <!-- Portfolio -->
     <section class="gallery">
 
